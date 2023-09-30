@@ -62,7 +62,7 @@ public class Pacientews {
     protected String docpaciente;
     @XmlElement(required = true)
     @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar fechanacpaciente;
+    protected Date fechanacpaciente;
     @XmlElement(required = true)
     protected String emailpaciente;
 

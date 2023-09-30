@@ -13,11 +13,9 @@ public class PacienteService {
 
     @Autowired
     private PacienteRepository pacienteRepository;
-
     public List<Paciente> obtenerPacientes(){
         return pacienteRepository.findAll();
     }
-
     public Paciente obtenerPacienteXId(Integer id){
         Optional<Paciente> paciente = pacienteRepository
                 .findById(id);
@@ -26,7 +24,6 @@ public class PacienteService {
         }
         return paciente.get();
     }
-
     public Paciente guardarPaciente(Paciente paciente){
         return pacienteRepository.save(paciente);
     }
