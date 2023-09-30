@@ -15,6 +15,8 @@ import java.util.List;
 @Endpoint
 public class PacienteEndPoint {
 
+
+
     private static final String NAMESPACE_URI = "http://www.DSWll_CL1SOAP_T6JC.examen.com/ws/objects";
     @Autowired
     private PacienteRepository pacienteRepository;
@@ -24,7 +26,7 @@ public class PacienteEndPoint {
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getPacientesRequest")
     @ResponsePayload
     public GetPacientesResponse getPacientes(@RequestPayload
-                                               GetPacientesRequest request){
+                                             GetPacientesRequest request){
         GetPacientesResponse response = new GetPacientesResponse();
         List<Pacientews> pacientewsList = pacienteConvert
                 .convertPacienteToPacienteWs(pacienteRepository.findAll());
@@ -36,7 +38,7 @@ public class PacienteEndPoint {
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getPacienteRequest")
     @ResponsePayload
     public GetPacienteResponse getPacientesXId(@RequestPayload
-                                                 GetPacienteRequest request){
+                                               GetPacienteRequest request){
         GetPacienteResponse response = new GetPacienteResponse();
         Pacientews pacientews = pacienteConvert
                 .convertPacienteToPacienteWs(
@@ -48,7 +50,7 @@ public class PacienteEndPoint {
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "postPacienteRequest")
     @ResponsePayload
     public PostPacienteResponse postPaciente(@RequestPayload
-                                               PostPacienteRequest request){
+                                             PostPacienteRequest request){
         PostPacienteResponse response = new PostPacienteResponse();
         Paciente newPaciente =
                 pacienteConvert.convertPacienteWsToPaciente(
