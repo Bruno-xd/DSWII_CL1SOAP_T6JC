@@ -15,7 +15,7 @@ import java.util.List;
 @Endpoint
 public class PacienteEndPoint {
 
-    private static final String NAMESPACE_URI = "http://www.cibertec.edu.pe/ws/objects";
+    private static final String NAMESPACE_URI = "http://www.DSWll_CL1SOAP_T6JC.examen.com/ws/objects";
     @Autowired
     private PacienteRepository pacienteRepository;
     @Autowired
