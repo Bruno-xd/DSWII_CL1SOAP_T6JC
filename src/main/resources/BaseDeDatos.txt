@@ -1,0 +1,23 @@
+CREATE DATABASE CL1_SOAP;
+USE CL1_SOAP
+CREATE TABLE Paciente(
+IdPaciente 		  INT NOT NULL AUTO_INCREMENT,
+NomPaciente 	  VARCHAR(50) NOT NULL,
+ApePaciente 	  VARCHAR(50) NOT NULL,
+DocPaciente 	  VARCHAR(50) NOT NULL,
+FechaNacPaciente  DATE NOT NULL,
+EmailPaciente     VARCHAR(50) NOT NULL,
+ PRIMARY KEY (IdPaciente));
+ --
+ INSERT INTO Paciente (NomPaciente, ApePaciente, DocPaciente, FechaNacPaciente, EmailPaciente)
+VALUES
+    ('Juan', 'Pérez', '123456', '1990-01-15', 'juan.perez@example.com'),
+    ('María', 'Gómez', '789012', '1985-05-20', 'maria.gomez@example.com'),
+    ('Pedro', 'Martínez', '345678', '1998-09-10', 'pedro.martinez@example.com'),
+    ('Laura', 'Rodríguez', '567890', '1992-03-25', 'laura.rodriguez@example.com'),
+    ('Carlos', 'López', '901234', '1980-07-08', 'carlos.lopez@example.com'),
+    ('Ana', 'Fernández', '234567', '1995-11-30', 'ana.fernandez@example.com'),
+    ('Luis', 'García', '678901', '1987-12-05', 'luis.garcia@example.com'),
+    ('Sofía', 'Díaz', '123789', '1993-02-18', 'sofia.diaz@example.com'),
+    ('Eduardo', 'Ramírez', '456789', '1983-06-12', 'eduardo.ramirez@example.com'),
+    ('Isabel', 'Torres', '890123', '1997-04-22', 'isabel.torres@example.com');
