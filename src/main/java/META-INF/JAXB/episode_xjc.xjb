@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2023.09.29 a las 09:45:05 PM COT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.DSWll_CL1SOAP_T6JC.examen.com/ws/objects">
+    <schemaBindings map="false">
+      <package name="com.examen.dswll_cl1soap_t6jc.ws.objects"/>
+    </schemaBindings>
+    <bindings scd="tns:getPacientesRequest">
+      <class ref="com.examen.dswll_cl1soap_t6jc.ws.objects.GetPacientesRequest"/>
+    </bindings>
+    <bindings scd="tns:getPacientesResponse">
+      <class ref="com.examen.dswll_cl1soap_t6jc.ws.objects.GetPacientesResponse"/>
+    </bindings>
+    <bindings scd="~tns:pacientews">
+      <class ref="com.examen.dswll_cl1soap_t6jc.ws.objects.Pacientews"/>
+    </bindings>
+    <bindings scd="tns:getPacienteRequest">
+      <class ref="com.examen.dswll_cl1soap_t6jc.ws.objects.GetPacienteRequest"/>
+    </bindings>
+    <bindings scd="tns:getPacienteResponse">
+      <class ref="com.examen.dswll_cl1soap_t6jc.ws.objects.GetPacienteResponse"/>
+    </bindings>
+    <bindings scd="tns:postPacienteRequest">
+      <class ref="com.examen.dswll_cl1soap_t6jc.ws.objects.PostPacienteRequest"/>
+    </bindings>
+    <bindings scd="tns:postPacienteResponse">
+      <class ref="com.examen.dswll_cl1soap_t6jc.ws.objects.PostPacienteResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+
