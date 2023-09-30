@@ -1,7 +1,9 @@
+
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:tns="http://www.DSWll_CL1SOAP_T6JC.examen.com/ws/objects"
            targetNamespace="http://www.DSWll_CL1SOAP_T6JC.examen.com/ws/objects"
            elementFormDefault="qualified">
+    <!-- contrato pacientesrequest-->
     <!-- Find All -->
     <xs:element name="getPacientesRequest">
         <xs:complexType>
@@ -9,7 +11,7 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-
+    <!-- contrato pacientesresponse-->
     <xs:element name="getPacientesResponse">
         <xs:complexType>
             <xs:sequence>
@@ -18,6 +20,7 @@
         </xs:complexType>
     </xs:element>
     <!-- Find by Id -->
+    <!-- contrato pacienterequest-->
     <xs:element name="getPacienteRequest">
         <xs:complexType>
             <xs:sequence>
