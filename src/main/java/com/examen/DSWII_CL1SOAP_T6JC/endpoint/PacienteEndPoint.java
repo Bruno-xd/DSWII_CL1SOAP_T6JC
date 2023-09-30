@@ -45,7 +45,7 @@ public class PacienteEndPoint {
         return response;
     }
 
-    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "postDomicilioRequest")
+    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "postPacienteRequest")
     @ResponsePayload
     public PostPacienteResponse postPaciente(@RequestPayload
                                                PostPacienteRequest request){
